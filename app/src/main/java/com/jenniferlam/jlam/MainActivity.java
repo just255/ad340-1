@@ -90,11 +90,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Main2Activity.class);
                 startActivity(intent);
-                recyclerView = (RecyclerView) findViewById(R.id.recycleview1);
-                recyclerViewLayoutManager = new LinearLayoutManager(MainActivity.this);
-                recyclerView.setLayoutManager(recyclerViewLayoutManager);
-                recyclerViewAdapter = new RecyclerViewAdapter(context, places);
-                recyclerView.setAdapter(recyclerViewAdapter);
             }
         });
 
@@ -108,8 +103,13 @@ public class MainActivity extends AppCompatActivity {
             if(name[position].equals("Recyler View")){
                 Intent intent2 = new Intent(MainActivity.this, RecyclerViewAdapter.class);
                 startActivity(intent2);
-            }
 
+                recyclerView = (RecyclerView) findViewById(R.id.recycleview);
+                recyclerViewLayoutManager = new LinearLayoutManager(MainActivity.this);
+                recyclerView.setLayoutManager(recyclerViewLayoutManager);
+                recyclerViewAdapter = new RecyclerViewAdapter(context, places);
+                recyclerView.setAdapter(recyclerViewAdapter);
+            }
             }
         });
 

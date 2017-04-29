@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
 
-    String[][] places;
+    private String[][] places;
     Context context;
     View view;
     ViewHolder viewHolder;
@@ -27,15 +27,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         context = context1;
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder{
-       public TextView cityView;
-       public TextView stateView;
-       public ViewHolder(View v){
-           super(v);
-           cityView = (TextView)v.findViewById(R.id.city_name);
-           stateView = (TextView)v.findViewById(R.id.state_name);
-       }
-   }
+
 
    @Override
     public RecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
@@ -54,5 +46,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public int getItemCount(){
        return places.length;
    }
-
+    public class ViewHolder extends RecyclerView.ViewHolder{
+        public TextView cityView;
+        public TextView stateView;
+        public ViewHolder(View v){
+            super(v);
+            cityView = (TextView)v.findViewById(R.id.city_name);
+            stateView = (TextView)v.findViewById(R.id.state_name);
+        }
+    }
 }

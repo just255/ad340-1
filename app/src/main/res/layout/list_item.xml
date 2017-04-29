@@ -7,11 +7,11 @@
         android:id="@+id/city_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="CITY" />
 
     <TextView
         android:id="@+id/state_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="sTATE" />
 </LinearLayout>
