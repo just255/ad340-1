@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Jlam</string>
+
+    <string-array name="titles">
+        <item>art</item>
+        <item>travel</item>
+        <item>food</item>
+        <item>entertainment</item>
+    </string-array>
 </resources>
