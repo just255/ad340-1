@@ -116,8 +116,6 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(ViewHolder holder, int position) {
-            Log.d("PLACES", "places equals " + places[position][0]);
-            Log.d("PLACES", "places equals " + places[position][1]);
             holder.cityView.setText(places[position][0]);
             holder.stateView.setText(places[position][1]);
         }
