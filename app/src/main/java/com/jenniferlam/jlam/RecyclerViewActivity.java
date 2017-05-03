@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -109,7 +108,9 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
         @Override
         public RecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+
             View item = getLayoutInflater().inflate(R.layout.list_item, parent, false);
+
             ViewHolder vh = new ViewHolder(item);
             return vh;
         }
