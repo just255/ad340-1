@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Jlam</string>
+    <string name="menu_action_setting">Setting</string>
+    <string name="menu_action_about_us">menu_action_about_us</string>
 
     <string-array name="titles">
         <item>art</item>
